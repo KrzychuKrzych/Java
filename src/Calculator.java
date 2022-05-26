@@ -9,7 +9,7 @@ public class Calculator {
         int a = number.nextInt();
         int b = number.nextInt();
         int dodawanie = a + b;
-        int mnozenie = a * b;
+        int mnozenie = a % b;
 
         System.out.println("Wynik dodawania: " + dodawanie);
         System.out.println("Wynik mnozenia: " + mnozenie);
