@@ -1,18 +1,21 @@
-import java.util.Scanner;
-
 public class Calculator {
 
-    public static void main(String[] args) {
-        Scanner number = new Scanner(System.in);
-
-        System.out.println("Podaj proszę dwie liczby: ");
-        int a = number.nextInt();
-        int b = number.nextInt();
-        int dodawanie = a + b;
-        int mnozenie = a % b;
-
-        System.out.println("Wynik dodawania: " + dodawanie);
-        System.out.println("Wynik mnozenia: " + mnozenie);
-
+    public int dodawanie(int a, int b){
+        return a + b;
     }
+
+    public int odejmowanie(int a, int b){
+        return a - b;
+    }
+
+    public int mnozenie(int a, int b){
+        return a * b;
+    }
+
+    public int mod(int a, int b){
+        return a % b;
+    }
+
+
+
 }
