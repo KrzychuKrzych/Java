@@ -1,2 +1,7 @@
 /.idea/
+<<<<<<< HEAD
 /target/
+=======
+Desktop.iml
+/out/
+>>>>>>> origin/master
