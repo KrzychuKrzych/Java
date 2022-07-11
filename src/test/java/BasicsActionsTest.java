@@ -1,8 +1,5 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
@@ -28,8 +25,11 @@ public class BasicsActionsTest {
         userNameInput.sendKeys("admin");
         System.out.println(userNameInput.getText());
         System.out.println(userNameInput.getAttribute("value"));
-        // userNameInput.sendKeys(Keys.ENTER);
-        userNameInput.sendKeys(Keys.TAB);
+        userNameInput.sendKeys(Keys.ENTER);
+        Alert firstAlert = driver.switchTo().alert();
+        firstAlert.accept();
+        driver.switchTo().alert().accept();
+        //userNameInput.sendKeys(Keys.TAB);
 
         driver.findElement(By.cssSelector("[type='checkbox']")).click();
         driver.findElement(By.cssSelector("[value='male']")).click();
